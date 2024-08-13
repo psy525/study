@@ -1,0 +1,14 @@
+@charset "utf-8";
+/* CSS Document */
+
+.imgs{
+	height:350px;
+	width:1000px;
+	position:relative;
+	overflow:hidden;
+}
+.imgs>img{
+	width:100%;
+	position:absolute;
+	transition:all 1s
+}

@@ -1,0 +1,91 @@
+@charset "utf-8";
+
+html,
+body {
+  width: 1200px;
+  font-size: 20px;
+}
+
+header {
+  float: left;
+  height: 670px;
+  width: 200px;
+}
+.top {
+  float: left;
+  height: 600px;
+  width: 200px;
+}
+.logo {
+  float: left;
+  height: 100px;
+  width: 200px;
+  background-color: #eeeeee;
+}
+nav {
+  float: left;
+}
+.menu {
+  float: left;
+  width: 150px;
+  background-color: #eeeeee;
+}
+.menu > li {
+  float: left;
+  width: 150px;
+}
+.imgslide {
+  float: left;
+  height: 350px;
+  width: 1000px;
+  background-color: #00ffff;
+}
+
+.contents {
+  float: left;
+  height: 120px;
+  width: 1000px;
+  background-color: #ff0000;
+}
+.notice {
+  float: left;
+  height: 200px;
+  width: 300px;
+}
+.gallery {
+  float: left;
+  height: 200px;
+  width: 300px;
+}
+
+.shortcut {
+  float: left;
+  height: 200px;
+  width: 400px;
+}
+footer {
+  float: left;
+  height: 120px;
+  width: 1000px;
+  background-color: #eeeeee;
+}
+.copy {
+  float: left;
+  height: 120px;
+  width: 600px;
+}
+.site {
+  float: right;
+  height: 120px;
+  width: 400px;
+  background-color: #ffff00;
+}
+.site > ul {
+  float: left;
+  width: 400px;
+}
+.site > ul > li {
+  float: left;
+  height: 60px;
+  width: 400px;
+}

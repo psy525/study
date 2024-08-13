@@ -1,0 +1,88 @@
+@charset "utf-8";
+/* CSS Document */
+
+html, body {
+  width: 1200px;
+  font-size: 20px;
+}
+header {
+  float: left;
+  height: 100px;
+  width: 1200px;
+}
+.top {
+  float: left;
+  height: 100px;
+  width: 1200px;
+}
+.logo {
+  float: left;
+  height: 100px;
+  width: 200px;
+  background-color: #EEEEEE;
+}
+nav {
+  float: right;
+}
+.menu {
+  float: right;
+  width: 600px;
+  background-color: #EEEEEE;
+}
+.menu>li {
+  float: right;
+  width: 200px;
+}
+.imgslide {
+  float: left;
+  height: 350px;
+  width: 1200px;
+  background-color: #00FFFF;
+}
+.contents {
+  float: left;
+  height: 200px;
+  width: 1200px;
+  background-color: #FF0000;
+}
+.notice {
+  float: left;
+  height: 200px;
+  width: 400px;
+}
+.gallery {
+  float: left;
+  height: 200px;
+  width: 400px;
+}
+.shortcut {
+  float: left;
+  height: 200px;
+  width: 400px;
+}
+footer {
+  float: left;
+  height: 120px;
+  width: 1200px;
+  background-color: #EEEEEE
+}
+.copy {
+  float: left;
+  height: 120px;
+  width: 800px;
+}
+.site {
+  float: right;
+  height: 120px;
+  width: 400px;
+  background-color: #FFFF00;
+}
+.site>ul {
+  float: left;
+  width: 400px;
+}
+.site>ul>li {
+  float: left;
+  height: 60px;
+  width: 400px;
+}
