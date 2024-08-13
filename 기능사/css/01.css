@@ -1,0 +1,113 @@
+* {
+  width: 1000px;
+  padding: 0;
+  list-style: none;
+  font-family: "맑은고딕";
+  background-color: #ffffff;
+  color: #333333;
+}
+body {
+  width: 1000px;
+  height: 650px;
+  background-color: #ffffff;
+  font-size: 20px;
+}
+
+a {
+  text-decoration: none;
+  display: block;
+}
+
+header {
+  float: left;
+  position: absolute;
+}
+
+.top {
+  float: left;
+  width: 200px;
+  height: 650px;
+}
+
+.imgslide {
+  float: right;
+  width: 800px;
+  height: 350px;
+}
+
+.contents {
+  float: right;
+  width: 800px;
+  height: 200px;
+}
+
+footer {
+  float: right;
+}
+
+.bottom {
+  float: right;
+  width: 800px;
+  height: 200px;
+}
+
+.logo {
+  float: left;
+  width: 200px;
+  height: 40px;
+  margin-top: 30px;
+  margin-bottom: 30px;
+}
+
+.menu {
+  float: left;
+  top: 100px;
+  left: 10px;
+  position: absolute;
+  text-align: center;
+  z-index: 1;
+}
+
+.navi > li {
+  float: left;
+  width: 180px;
+}
+.navi > li > a {
+  width: 180px;
+  height: 40px;
+  line-height: 40px;
+  font-size: 16px;
+  font-weight: bold;
+  background-color: #333333;
+  color: #ffffff;
+}
+.navi > li > a:hover {
+  background-color: #eeeeee;
+  color: #000000;
+}
+
+.gallery,
+.notice {
+  float: left;
+  width: 300px;
+  height: 200px;
+}
+
+.shortcut {
+  float: right;
+  width: 200px;
+  height: 200px;
+}
+
+.btlogo,
+.familysite {
+  float: left;
+  width: 200px;
+  height: 100px;
+}
+
+.copy {
+  float: left;
+  width: 400px;
+  height: 100px;
+}
