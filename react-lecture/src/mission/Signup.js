@@ -25,6 +25,8 @@ const Signup = () => {
       alert("이메일을 입력하세요");
       return;
     }
+    console.log("코드쇼" + codeShow);
+
     // 창이 보여진 상태에서 이메일 인증을 누른 경우
     if (!codeCheck) {
       let random = "";
@@ -45,9 +47,6 @@ const Signup = () => {
       setCodeShow(false);
       setCodeCheck(true);
     }
-    if (param.login) {
-    }
-    console.log(param.codeConfirm);
   };
 
   //3. 가입하기 버튼 클릭시 로컬에 정보 저장

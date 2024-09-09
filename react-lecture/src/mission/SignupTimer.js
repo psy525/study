@@ -1,11 +1,12 @@
-import { useEffect, useState } from "react";
+import { useEffect, useRef, useState } from "react";
 
 const SignupTimer = ({ close }) => {
   //필요한거
   const [userCode, setUserCode] = useState(""); // 입력한 코드값
-  const [seconds, setSeconds] = useState(2); //타이머 시간
-  const [timerMin, setTimerMin] = useState(2);
+  const [seconds, setSeconds] = useState(1); //타이머 시간
+  const [timerMin, setTimerMin] = useState(1);
   const [timerSecond, setTimerSecond] = useState(0);
+  const inputCodeRef = useRef();
 
   //2.타이머 작동
   useEffect(() => {
@@ -17,6 +18,7 @@ const SignupTimer = ({ close }) => {
           clearInterval(timer);
           alert("시간이 초과되었습니다.");
           close({ codeConfirm: false });
+          inputCodeRef.current.disabled = true;
           return 0;
         }
       });
@@ -35,7 +37,6 @@ const SignupTimer = ({ close }) => {
   //타이머 작동 중에 다시 이메일 전송버튼을 눌렀을 경우 emailCheck=true로 해서 넘겨주기
 
   // 2.  확인 누르면 닫히기 close넘기기
-
   const codeCheck = () => {
     const code = localStorage.getItem("code");
     if (userCode == code) {
@@ -62,6 +63,7 @@ const SignupTimer = ({ close }) => {
           onChange={(e) => {
             setUserCode(e.target.value);
           }}
+          ref={inputCodeRef}
         />
       </div>
       <div className="md:col-span-1 flex">
